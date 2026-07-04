@@ -2,9 +2,8 @@
     "name": "kanvigo/audit-contracts",
     "description": "Stable contracts for Kanvigo's pluggable audit layer: the immutable AuditEvent DTO and the AuditSink interface third-party sinks implement.",
     "keywords": ["kanvigo", "audit", "audit-log", "contracts", "compliance"],
-    "homepage": "https://github.com/Fanmade/audit-contracts",
+    "homepage": "https://github.com/Fanmade/kanvigo-audit-contracts",
     "license": "MIT",
-    "version": "0.1.0",
     "authors": [
         {
             "name": "Ben",
