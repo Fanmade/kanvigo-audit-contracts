@@ -20,6 +20,9 @@ namespace Kanvigo\Audit\Contracts;
  * - Token:    API/MCP token lifecycle — created, revoked, expired.
  * - Security: everything security-relevant that fits none of the above —
  *             lockouts, invitation misuse, integrity alerts.
+ * - Access:   read/access auditing — "who looked at what" — audit_stream_read,
+ *             contact_info_viewed, attachment_downloaded. High-volume by nature,
+ *             so sinks that accept it should prefer queued delivery.
  */
 enum AuditCategory: string
 {
@@ -28,4 +31,5 @@ enum AuditCategory: string
     case Authz = 'authz';
     case Token = 'token';
     case Security = 'security';
+    case Access = 'access';
 }
